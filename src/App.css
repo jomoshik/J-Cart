@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: Raleway, sans-serif;
+  text-decoration: none;
+  
+}
+
+/* signup and login */
+
+
+.signUpContainer ,.loginContainer {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  
+}
+.signUp, .logIn{
+  border: 1px solid black;
+  padding: 2% 7%;
+}
+.signUp{
+
+  border-top-left-radius: 10%;
+}
+
+.logIn{
+  border-bottom-right-radius: 10%;
+}
+
+.signUp h2, .logIn h2{
+margin-bottom: 18px;
+  
+}
+
+.signUp form label, .logIn form label{
+font-size: 16px;
+font-weight: 600;
+}
+
+.signUp form input, .logIn form input{
+  display: block;
+  border-radius: 4px;
+  width: 24vw;
+  font-size: 18px;
+  padding: 5px 10px;
+  border: 1px solid #dad3d3;
+}
+
+.signUp form div, .logIn form input{
+  margin-bottom: 15px;
+}
+
+
+input:focus{
+  /* to the whole inputs */
+  outline: none;
+}
+#toLogin, #toSignUp{
+ 
+  text-decoration: none;
+
+}
+#toLogin:hover, #toSignUp:hover{
+  color: rgb(204, 24, 24);
+  text-decoration: underline;
+}
+
+
+/* login & signup - password show and hide */
+
+.loginShowPass, .signupShowPass{
+  position: absolute;
+    font-size: 1.3rem;
+  }
+  
+  .loginShowPass{
+  top: 51.4%;
+  right: 39%;
+}
+
+.password-input-container{
+  position: relative;
+  
+}
+
+.signupShowPass{
+  top: 47%;
+  left: 18.3rem;
+
+}
+
+/* navHead */
+
+.navBar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1c16;
+}
+
+
+
+.navBar .user img{
+  width: 40px;
+}
+
+/* cart Count */
+
+
+
+.cartCount{
+  position: absolute;
+  top: 14px;
+  color: orange;
+  left: 11.9%;
+}
+/* Home */
+
+.homeContainer{
+  position: relative;
+  
+}
+.intro {
+  position: relative;
+  margin-top: 5rem;
+}
+.intro h2{
+  font-size: 13rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.intro img{
+  position: absolute;
+  top: -49%;
+    width: 45%;
+    right: 28%;
+}
+.intro  p{
+  text-align: center;
+}
+
+ /* filtering  */
+
+
+.btnGroup{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0px;
+}
+
+.secondNav{
+  margin-top: 6rem;
+}
+
+.secondNav .SearchBar input{
+  padding: 5px 5px;
+    width: 22%;
+    margin: 10px 10px 0px 0px;
+}
+
+.secondNav .SearchBar input:focus{
+  outline: none;
+  text-transform: capitalize;
+}
+
+
+ /* products */
+
+.cards{
+  margin: 3rem 3rem;
+  display: grid;
+  grid-gap: 20px 20px;
+  grid-template-columns: repeat(3,3fr);
+  align-items: center;
+}
+
+.Productcard{
+  border: 1px solid #dbdbdb;
+position: relative;
+}
+.cardImg{
+  width: 100%;
+  height: 20.3rem;
+  text-align: center;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.cardImg img{
+  width: 75%;
+}
+
+.Productcard #name , .Productcard #cartName  {
+  background-color: #c5c583;
+  width: 57%;
+  border-radius: 20px;
+  font-size: 15px;
+  text-align: center;
+  padding: 4px 0px;
+  font-weight: 500;
+ 
+  left: 5.5rem;
+}
+
+.Productcard #name{
+  bottom: 4.5rem;
+}
+
+.Productcard #cartName{
+  bottom: 1.9rem;
+}
+
+.details{
+  background-color: #dfdede;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items:center ;
+  /* border-radius: 10px; */
+ 
+}
+
+.details .priceRating p:first-child, .price{
+  
+  font-size: 20px;
+}
+
+.close-btn-icon{
+position: absolute;
+    top: -21px;
+    left: 17.1rem;
+    background: none;
+    border: none;
+    font-size: 30px;
+}
+
+
+/* admin */
+
+.editproduct input{
+padding: 3px 5px;
+margin:6px 3px;
+}

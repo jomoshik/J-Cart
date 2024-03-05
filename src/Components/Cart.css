@@ -1,0 +1,22 @@
+.card:hover  {
+    transform: scale(0.9);
+
+}
+.card {
+    transition: all 0.3s;
+}
+.Products {
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+
+}
+.intro {
+
+  font-size: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 700;
+  position: relative;
+  margin-top: 5rem;
+}
+
